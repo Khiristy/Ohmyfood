@@ -1,0 +1,478 @@
+/****GLOBAL****/
+html {
+  font-size: 0.22vw;
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rem;
+  animation-name: loader_ending;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  pointer-events: none;
+}
+.loader i {
+  animation-name: loader;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  color: #9356DC;
+}
+
+@keyframes loader {
+  50% {
+    font-size: 120rem;
+    rotate: 360deg;
+    color: #FF79DA;
+  }
+  100% {
+    font-size: 40rem;
+    rotate: -360deg;
+  }
+}
+@keyframes loader_ending {
+  100% {
+    opacity: 0;
+  }
+}
+:root,
+button,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 16rem;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 30rem;
+  padding-top: 18rem;
+  padding-bottom: 10rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+  font-size: 24rem;
+}
+
+/***var&mixins***/
+/*****header*****/
+.site_header-logo {
+  text-align: center;
+  margin-bottom: 15rem;
+}
+
+.site_header-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background-color: #EAEAEA;
+  height: 40rem;
+  padding-left: 75rem;
+}
+.site_header-location form {
+  height: 100%;
+}
+.site_header-logo i {
+  position: absolute;
+  left: 17rem;
+  top: 17rem;
+  color: #353535;
+  font-size: 25rem;
+  margin-left: 10rem;
+}
+.site_header-search {
+  height: 100%;
+  border: none;
+  background: transparent;
+}
+
+/*****explorer*****/
+.explorer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  padding-top: 40rem;
+  padding-bottom: 50rem;
+  background-color: #F6F6F6;
+}
+.explorer .btn {
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explorer h2 {
+  text-align: center;
+}
+.explorer h3 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18rem;
+}
+
+.btn {
+  width: 218rem;
+  height: 50rem;
+  border: none;
+  border-radius: 25rem;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  font-size: 16rem;
+  font-weight: 500;
+  color: white;
+  box-shadow: 0rem 4rem 10rem rgba(0, 0, 0, 0.2509803922);
+  transition: all 0.5s;
+}
+.btn:hover {
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  filter: brightness(115%);
+  box-shadow: 0rem 4rem 15rem 0rem rgba(0, 0, 0, 0.3490196078);
+}
+
+/****fonctionnement*****/
+.fonc {
+  padding: 40rem 15rem 40rem 30rem;
+  width: 100%;
+}
+.fonc h3 {
+  font-weight: 700;
+  font-size: 24rem;
+}
+
+.fonc_btn {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  width: 100%;
+  height: 72.4rem;
+  background-color: #F6F6F6;
+  box-shadow: 0rem 4rem 10rem rgba(0, 0, 0, 0.2509803922);
+  border-radius: 20px;
+  margin-top: 25rem;
+  margin-bottom: 25rem;
+}
+.fonc_btn-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #9356DC;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 100%;
+  margin-left: -12rem;
+}
+.fonc_btn-logo {
+  color: #353535;
+  font-size: 20rem;
+}
+.fonc_btn-txt {
+  font-size: 20rem;
+}
+.fonc_btn .fa-store {
+  color: #9356DC;
+}
+
+/****restaurants*****/
+.restaurant {
+  background-color: #F6F6F6;
+  padding: 40rem 10rem 40rem 10rem;
+  width: 100%;
+}
+.restaurant_title {
+  padding-bottom: 20rem;
+}
+
+.resto_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+.card {
+  width: 100%;
+  height: 251rem;
+  border-radius: 15rem;
+  background-color: white;
+  position: relative;
+}
+.card_img {
+  width: 100%;
+  height: 191rem;
+  object-fit: cover;
+  border-top-right-radius: 15rem;
+  border-top-left-radius: 15rem;
+}
+.card_content {
+  padding-left: 15rem;
+  padding-top: 10rem;
+}
+.card_title {
+  font-size: 18rem;
+  font-weight: 700;
+  padding-bottom: 5rem;
+}
+.card_subtitle {
+  font-size: 17rem;
+  font-weight: 300;
+}
+.card_new {
+  position: absolute;
+  top: 15rem;
+  right: 15rem;
+  width: 80rem;
+  height: 29rem;
+  background-color: #99E2D0;
+  color: #008766;
+  font-weight: 500;
+  font-size: 14rem;
+  text-align: center;
+  padding-top: 7rem;
+}
+.card_logo {
+  position: absolute;
+  bottom: 20rem;
+  right: 30rem;
+}
+
+/****footer****/
+footer {
+  padding: 22rem 25rem 22rem 25rem;
+  background-color: #353535;
+  color: white;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7rem;
+}
+footer a {
+  color: white;
+  font-weight: 500;
+}
+footer i {
+  width: 30rem;
+}
+
+.footer_title {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-size: 18rem;
+  line-height: 26.24rem;
+  padding-bottom: 15rem;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+}
+.footer_content a {
+  font-weight: 400;
+  font-size: 16rem;
+  padding-bottom: 7rem;
+}
+
+/*****************Menu*********************/
+.site_header-img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 275rem;
+  object-fit: cover;
+  transform: scale(1.1);
+}
+
+/******Carte*********/
+main {
+  position: relative;
+  margin-top: -40rem;
+  z-index: 2;
+  width: 100%;
+  border-top-right-radius: 30rem;
+  border-top-left-radius: 30rem;
+  background-color: #F6F6F6;
+  padding: 30rem 15rem 30rem 15rem;
+}
+
+.resto_name {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-size: 28rem;
+  line-height: 40.8rem;
+  padding-bottom: 40rem;
+}
+.resto_name-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.resto_name-logo {
+  margin-top: 10rem;
+  transform: scaleY(1.1);
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 35rem;
+  gap: 15rem;
+}
+
+.title_plat {
+  font-weight: 300;
+  font-size: 16rem;
+  line-height: 18.75rem;
+}
+.title_plat::after {
+  content: "";
+  display: block;
+  width: 50rem;
+  border-bottom: 3rem solid #99E2D0;
+  margin-top: 5rem;
+}
+
+.plat {
+  box-shadow: 0rem 4rem 10rem rgba(0, 0, 0, 0.2509803922);
+  width: 100%;
+  max-width: 500rem;
+  min-height: 69rem;
+  border-radius: 15rem;
+  padding: 8rem 15rem 15rem 15rem;
+  background-color: white;
+  /**animations**/
+  animation-name: carte;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  position: relative;
+  overflow: hidden;
+}
+.plat_name {
+  font-weight: 500;
+  font-size: 18rem;
+  line-height: 21.1rem;
+}
+.plat_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+.plat_description {
+  font-size: 15.04rem;
+  font-weight: 300;
+  line-height: 17.63rem;
+}
+.plat_prix {
+  font-weight: 700;
+  color: #353535;
+  transition: all 0.5s;
+}
+.plat:hover .plat_prix {
+  translate: -59rem;
+}
+.plat_valid {
+  width: 59rem;
+  height: 100%;
+  border-radius: 0px, 15px, 15px, 0px;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 0;
+  right: -59rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.plat_valid i {
+  color: white;
+}
+.plat:hover .plat_valid {
+  width: 59rem;
+  right: 0;
+}
+
+.plat_wrapper .plat {
+  margin-bottom: 15rem;
+}
+.plat_wrapper .plat:nth-child(1) {
+  animation-delay: 0s;
+}
+.plat_wrapper .plat:nth-child(2) {
+  animation-delay: 0.7s;
+}
+.plat_wrapper .plat:nth-child(3) {
+  animation-delay: 1.4s;
+}
+.plat_wrapper .plat:nth-child(4) {
+  animation-delay: 2.1s;
+}
+.plat_wrapper .plat:nth-child(5) {
+  animation-delay: 2.8s;
+}
+.plat_wrapper .plat:nth-child(6) {
+  animation-delay: 3.5s;
+}
+.plat_wrapper .plat:nth-child(7) {
+  animation-delay: 4.2s;
+}
+.plat_wrapper .plat:nth-child(8) {
+  animation-delay: 4.9s;
+}
+.plat_wrapper .plat:nth-child(9) {
+  animation-delay: 5.6s;
+}
+.plat_wrapper .plat:nth-child(10) {
+  animation-delay: 6.3s;
+}
+
+@keyframes carte {
+  0% {
+    opacity: 0;
+    translate: 0rem -40rem;
+  }
+  100% {
+    opacity: 1;
+    translate: 0rem 0rem;
+  }
+}
+.fa-heart {
+  font-size: 22rem;
+  -webkit-text-stroke: 1px black;
+  background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.5s;
+}
+.fa-heart:hover {
+  background-position: 0 0;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
