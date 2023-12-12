@@ -5,13 +5,18 @@
   .explorer br {
     display: none;
   }
+  .fonc {
+    margin: auto;
+    width: 1080rem;
+    padding: 60rem 0 30rem 0;
+  }
   .fonc_pos {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 25rem;
-    padding: 0rem 110rem 0rem 110rem;
     width: 100%;
+    padding-left: 12rem;
   }
   .fonc_btn {
     width: 335rem;
@@ -30,13 +35,11 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
     gap: 70rem;
   }
   .card {
     width: 490rem;
-  }
-  .fonc_title {
-    padding-left: 170rem;
   }
   footer {
     position: relative;

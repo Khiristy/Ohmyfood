@@ -22,6 +22,8 @@ html {
     animation-delay: 3s;
     pointer-events: none;
 
+
+    display: none;
     & i {
         animation-name: loader;
         animation-duration: 3s;
@@ -192,7 +194,7 @@ $purple: #9356DC;
 /****fonctionnement*****/
 
 .fonc {
-    padding: 40rem 15rem 40rem 30rem;
+    // padding: 40rem 15rem 40rem 30rem;
     width: 100%;
 
     & h3 {
