@@ -1,7 +1,6 @@
 /****GLOBAL****/
 html {
   font-size: 0.22vw;
-  background-color: #008766;
 }
 
 .loader {
@@ -33,12 +32,12 @@ html {
 @keyframes loader {
   50% {
     font-size: 120rem;
-    rotate: 360deg;
+    transform: rotate(360deg);
     color: #FF79DA;
   }
   100% {
     font-size: 40rem;
-    rotate: -360deg;
+    transform: rotate(-360deg);
   }
 }
 @keyframes loader_ending {
@@ -389,12 +388,12 @@ main {
   transition: all 0.5s;
 }
 .plat:hover .plat_prix {
-  translate: -59rem;
+  transform: translate(-59rem);
 }
 .plat_valid {
   width: 59rem;
   height: 100%;
-  border-radius: 0px, 15px, 15px, 0px;
+  border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
   position: absolute;
   top: 0;
@@ -449,11 +448,11 @@ main {
 @keyframes carte {
   0% {
     opacity: 0;
-    translate: 0rem -40rem;
+    transform: translate(0rem, -40rem);
   }
   100% {
     opacity: 1;
-    translate: 0rem 0rem;
+    transform: translate(0rem, 0rem);
   }
 }
 .fa-heart {
