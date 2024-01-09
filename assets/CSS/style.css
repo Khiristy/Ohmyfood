@@ -20,7 +20,6 @@ html {
   animation-fill-mode: forwards;
   animation-delay: 3s;
   pointer-events: none;
-  display: none;
 }
 .loader i {
   animation-name: loader;
