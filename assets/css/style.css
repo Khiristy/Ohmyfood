@@ -1,5 +1,5 @@
-/****GLOBAL****/
-html {
+html,
+:root {
   font-size: 0.22vw;
 }
 
@@ -14,7 +14,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40rem;
+  font-size: 40px;
   animation-name: loader_ending;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -31,12 +31,12 @@ html {
 
 @keyframes loader {
   50% {
-    font-size: 120rem;
+    font-size: 120px;
     transform: rotate(360deg);
     color: #FF79DA;
   }
   100% {
-    font-size: 40rem;
+    font-size: 40px;
     transform: rotate(-360deg);
   }
 }
@@ -52,14 +52,14 @@ body {
 }
 
 body {
-  font-size: 16rem;
+  font-size: 16px;
 }
 
-h1 {
+.site_header-logo {
   font-family: "Shrikhand", serif;
-  font-size: 30rem;
-  padding-top: 18rem;
-  padding-bottom: 10rem;
+  font-size: 30px;
+  padding-top: 18px;
+  padding-bottom: 10px;
 }
 
 a {
@@ -70,35 +70,35 @@ a {
 h2,
 h3 {
   font-weight: 700;
-  font-size: 24rem;
+  font-size: 24px;
 }
 
 /***var&mixins***/
 /*****header*****/
 .site_header-logo {
   text-align: center;
-  margin-bottom: 15rem;
+  margin-bottom: 15px;
 }
 
 .site_header-location {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 10px;
   background-color: #EAEAEA;
-  height: 40rem;
-  padding-left: 75rem;
+  height: 40px;
+  padding-left: 75px;
 }
 .site_header-location form {
   height: 100%;
 }
 .site_header-logo i {
   position: absolute;
-  left: 17rem;
-  top: 17rem;
+  left: 17px;
+  top: 17px;
   color: #353535;
-  font-size: 25rem;
-  margin-left: 10rem;
+  font-size: 25px;
+  margin-left: 10px;
 }
 .site_header-search {
   height: 100%;
@@ -112,13 +112,13 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15rem;
-  padding-top: 40rem;
-  padding-bottom: 50rem;
+  gap: 15px;
+  padding-top: 40px;
+  padding-bottom: 50px;
   background-color: #F6F6F6;
 }
 .explorer .btn {
-  margin-top: 15rem;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,47 +129,52 @@ h3 {
 .explorer h3 {
   text-align: center;
   font-weight: 300;
-  font-size: 18rem;
+  font-size: 18px;
 }
 
 .btn {
-  width: 218rem;
-  height: 50rem;
+  width: 218px;
+  height: 50px;
   border: none;
-  border-radius: 25rem;
+  border-radius: 25px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  font-size: 16rem;
+  font-size: 16px;
   font-weight: 500;
   color: white;
-  box-shadow: 0rem 4rem 10rem rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2509803922);
   transition: all 0.5s;
 }
 .btn:hover {
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   filter: brightness(115%);
-  box-shadow: 0rem 4rem 15rem 0rem rgba(0, 0, 0, 0.3490196078);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
 /****fonctionnement*****/
 .fonc {
   width: 100%;
+  padding: 40px 10px 40px 10px;
 }
 .fonc h3 {
   font-weight: 700;
-  font-size: 24rem;
+  font-size: 24px;
+}
+.fonc_pos {
+  padding: 0px 10px 0px 10px;
 }
 
 .fonc_btn {
   display: flex;
   align-items: center;
-  gap: 20rem;
+  gap: 20px;
   width: 100%;
-  height: 72.4rem;
+  height: 72.4px;
   background-color: #F6F6F6;
-  box-shadow: 0rem 4rem 10rem rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2509803922);
   border-radius: 20px;
-  margin-top: 25rem;
-  margin-bottom: 25rem;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 3px;
 }
 .fonc_btn-count {
   display: flex;
@@ -177,17 +182,17 @@ h3 {
   align-items: center;
   color: white;
   background-color: #9356DC;
-  width: 24rem;
-  height: 24rem;
+  width: 24px;
+  height: 24px;
   border-radius: 100%;
-  margin-left: -12rem;
+  margin-left: -12px;
 }
 .fonc_btn-logo {
   color: #353535;
-  font-size: 20rem;
+  font-size: 20px;
 }
 .fonc_btn-txt {
-  font-size: 20rem;
+  font-size: 20px;
 }
 .fonc_btn .fa-store {
   color: #9356DC;
@@ -196,68 +201,68 @@ h3 {
 /****restaurants*****/
 .restaurant {
   background-color: #F6F6F6;
-  padding: 40rem 10rem 40rem 10rem;
+  padding: 40px 10px 40px 10px;
   width: 100%;
 }
 .restaurant_title {
-  padding-bottom: 20rem;
+  padding-bottom: 20px;
 }
 
 .resto_cards {
   display: flex;
   flex-direction: column;
-  gap: 20rem;
+  gap: 20px;
 }
 
 .card {
   width: 100%;
-  height: 251rem;
-  border-radius: 15rem;
+  height: 251px;
+  border-radius: 15px;
   background-color: white;
   position: relative;
 }
 .card_img {
   width: 100%;
-  height: 191rem;
+  height: 191px;
   object-fit: cover;
-  border-top-right-radius: 15rem;
-  border-top-left-radius: 15rem;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 .card_content {
-  padding-left: 15rem;
-  padding-top: 10rem;
+  padding-left: 15px;
+  padding-top: 10px;
 }
 .card_title {
-  font-size: 18rem;
+  font-size: 18px;
   font-weight: 700;
-  padding-bottom: 5rem;
+  padding-bottom: 5px;
 }
 .card_subtitle {
-  font-size: 17rem;
+  font-size: 17px;
   font-weight: 300;
 }
 .card_new {
   position: absolute;
-  top: 15rem;
-  right: 15rem;
-  width: 80rem;
-  height: 29rem;
+  top: 15px;
+  right: 15px;
+  width: 80px;
+  height: 29px;
   background-color: #99E2D0;
   color: #008766;
   font-weight: 500;
-  font-size: 14rem;
+  font-size: 14px;
   text-align: center;
-  padding-top: 7rem;
+  padding-top: 7px;
 }
 .card_logo {
   position: absolute;
-  bottom: 20rem;
-  right: 30rem;
+  bottom: 20px;
+  right: 30px;
 }
 
 /****footer****/
 footer {
-  padding: 22rem 25rem 22rem 25rem;
+  padding: 22px 25px 22px 25px;
   background-color: #353535;
   color: white;
 }
@@ -265,22 +270,22 @@ footer nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 7rem;
+  gap: 7px;
 }
 footer a {
   color: white;
   font-weight: 500;
 }
 footer i {
-  width: 30rem;
+  width: 30px;
 }
 
 .footer_title {
   font-family: "Shrikhand", serif;
   font-weight: 400;
-  font-size: 18rem;
-  line-height: 26.24rem;
-  padding-bottom: 15rem;
+  font-size: 18px;
+  line-height: 26.24px;
+  padding-bottom: 15px;
 }
 
 .footer_content {
@@ -289,45 +294,45 @@ footer i {
 }
 .footer_content a {
   font-weight: 400;
-  font-size: 16rem;
-  padding-bottom: 7rem;
+  font-size: 16px;
+  padding-bottom: 7px;
 }
 
 /*****************Menu*********************/
-.site_header-img {
+.main_img {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 275rem;
+  height: 275px;
   object-fit: cover;
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 /******Carte*********/
 main {
   position: relative;
-  margin-top: -40rem;
+  margin-top: -40px;
   z-index: 2;
   width: 100%;
-  border-top-right-radius: 30rem;
-  border-top-left-radius: 30rem;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
   background-color: #F6F6F6;
-  padding: 30rem 15rem 30rem 15rem;
+  padding: 30px 15px 30px 15px;
 }
 
 .resto_name {
   font-family: "Shrikhand", serif;
   font-weight: 400;
-  font-size: 28rem;
-  line-height: 40.8rem;
-  padding-bottom: 40rem;
+  font-size: 28px;
+  line-height: 40.8px;
+  padding-bottom: 40px;
 }
 .resto_name-wrap {
   display: flex;
   justify-content: space-between;
 }
 .resto_name-logo {
-  margin-top: 10rem;
+  margin-top: 10px;
   transform: scaleY(1.1);
 }
 
@@ -335,30 +340,37 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-bottom: 35rem;
-  gap: 15rem;
+  padding-bottom: 35px;
+  gap: 15px;
+  width: 100%;
+  max-width: 700px;
+}
+.carte_pos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .title_plat {
   font-weight: 300;
-  font-size: 16rem;
-  line-height: 18.75rem;
+  font-size: 16px;
+  line-height: 18.75px;
 }
 .title_plat::after {
   content: "";
   display: block;
-  width: 50rem;
-  border-bottom: 3rem solid #99E2D0;
-  margin-top: 5rem;
+  width: 50px;
+  border-bottom: 3px solid #99E2D0;
+  margin-top: 5px;
 }
 
 .plat {
-  box-shadow: 0rem 4rem 10rem rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2509803922);
   width: 100%;
-  max-width: 500rem;
-  min-height: 69rem;
-  border-radius: 15rem;
-  padding: 8rem 15rem 15rem 15rem;
+  min-height: 69px;
+  border-radius: 15px;
+  padding: 8px 15px 15px 15px;
   background-color: white;
   /**animations**/
   animation-name: carte;
@@ -369,18 +381,26 @@ main {
 }
 .plat_name {
   font-weight: 500;
-  font-size: 18rem;
-  line-height: 21.1rem;
+  font-size: 18px;
+  line-height: 21.1px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 80%;
+  overflow: hidden;
 }
 .plat_wrap {
   display: flex;
   justify-content: space-between;
-  margin-top: 10rem;
+  margin-top: 10px;
 }
 .plat_description {
-  font-size: 15.04rem;
+  font-size: 15.04px;
   font-weight: 300;
-  line-height: 17.63rem;
+  line-height: 17.63px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 80%;
+  overflow: hidden;
 }
 .plat_prix {
   font-weight: 700;
@@ -388,16 +408,16 @@ main {
   transition: all 0.5s;
 }
 .plat:hover .plat_prix {
-  transform: translate(-59rem);
+  transform: translate(-59px);
 }
 .plat_valid {
-  width: 59rem;
+  width: 59px;
   height: 100%;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
   position: absolute;
   top: 0;
-  right: -59rem;
+  right: -59px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -407,12 +427,19 @@ main {
   color: white;
 }
 .plat:hover .plat_valid {
-  width: 59rem;
+  width: 59px;
   right: 0;
 }
 
+.plat_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .plat_wrapper .plat {
-  margin-bottom: 15rem;
+  margin-bottom: 15px;
 }
 .plat_wrapper .plat:nth-child(1) {
   animation-delay: 0s;
@@ -448,15 +475,15 @@ main {
 @keyframes carte {
   0% {
     opacity: 0;
-    transform: translate(0rem, -40rem);
+    transform: translate(0px, -40px);
   }
   100% {
     opacity: 1;
-    transform: translate(0rem, 0rem);
+    transform: translate(0px, 0px);
   }
 }
 .fa-heart {
-  font-size: 22rem;
+  font-size: 22px;
   -webkit-text-stroke: 1px black;
   background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
   background-position: 0 100px;

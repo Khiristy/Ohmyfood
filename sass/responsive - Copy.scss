@@ -1,74 +1,39 @@
-@media screen and (min-width: 700px) and (max-width: 1024px) {
 
-.fonc {
-    &_title {
-        text-align: center;
-    }
-    &_pos {
-        max-width: 700px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin: auto;
-    }    
-}
-.restaurant {
-    &_pos {
-        max-width: 700px;
-        width: 100%;
-        margin: auto;
-        
-    }
-    &_title {
-        text-align: center;
-    }
-}
-.resto_name-wrap {
-	display: flex;
-	justify-content: center;
-	gap: 15px;
-}
-
-}
-
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 700px) {
     html,:root {
         font-size: 1px;
     }
-
+    
     .explorer br {
         display: none;
     }
 
     .fonc {
         margin: auto;
-        width: 1022px;
-        padding:  60px 0 30px 0;
+        width: 1080rem;
+        padding:  60rem 0 30rem 0;
         &_pos {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 25px;
+            gap: 25rem;
             width: 100%;
-            padding-left: 12px;
-            max-width: 1080px;
+            padding-left: 12rem;
+            
         }
 
         &_btn {
-            width: 335px;
+            width: 335rem;
 
             &-txt {
-                font-size: 16px;
+                font-size: 16rem;
             }
         }
     }
 
     .restaurant {
-        padding: 20px 0px 30px 0px;
         &_pos {
-            width: 1022px;
+            width: 1080rem;
             margin: auto;
         }
 
@@ -82,11 +47,11 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        gap: 42px;
+        gap: 70rem;
     }
 
     .card {
-        width: 490px;
+        width: 490rem;
     }
 
     
@@ -94,30 +59,30 @@
 
     footer {
         position: relative;
-        height: 114px;
+        height: 114rem;
 
         nav {
             flex-direction: row;
             justify-content: flex-end;
-            padding-right: 250px;
-            padding-top: 40px;
-            gap: 15px;
+            padding-right: 250rem;
+            padding-top: 40rem;
+            gap: 15rem;
         }
     }
 
     .footer_title {
-        padding-bottom: 10px;
+        padding-bottom: 10rem;
         position: absolute;
-        right: 40px;
-        bottom: 25px;
+        right: 40rem;
+        bottom: 25rem;
     }
 
     .footer_content {
         display: flex;
         flex-direction: row;
-        padding-left: 20px;
-        padding-top: 0.5px;
-        gap: 15px;
+        padding-left: 20rem;
+        padding-top: 0.5rem;
+        gap: 15rem;
     }
 
     /***MENU***/
@@ -127,10 +92,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        max-width: 1055px;
+        max-width: 1055rem;
         width: 100%;
         margin: auto;
-        margin-top: 25px;
+        margin-top: 25rem;
     }
 
 .main_img {
@@ -143,9 +108,9 @@
 
     .resto_name-wrap {
         display: flex;
-        gap: 15px;
-        padding-top: 25px;
-        padding-bottom: 20px;
+        gap: 15rem;
+        padding-top: 25rem;
+        padding-bottom: 20rem;
     }
 
     .carte {
@@ -160,12 +125,12 @@
         }
 
         .plat {
-            width: 634px;
+            width: 634rem;
             max-width: none;
         }
 
         .btn {
-            padding-left: -25px;
+            padding-left: -25rem;
         }
 
 
