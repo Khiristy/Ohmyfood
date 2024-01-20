@@ -26,7 +26,8 @@
   }
 }
 @media screen and (min-width: 1025px) {
-  html, :root {
+  html,
+  :root {
     font-size: 1px;
   }
   .explorer br {
@@ -34,8 +35,8 @@
   }
   .fonc {
     margin: auto;
-    width: 1022px;
-    padding: 60px 0 30px 0;
+    width: 1007px;
+    padding: 60px 5px 30px 5px;
   }
   .fonc_pos {
     display: flex;
@@ -44,7 +45,10 @@
     gap: 25px;
     width: 100%;
     padding-left: 12px;
-    max-width: 1080px;
+    max-width: 1015px;
+  }
+  .fonc_title {
+    padding-left: 3px;
   }
   .fonc_btn {
     width: 335px;
@@ -56,8 +60,9 @@
     padding: 20px 0px 30px 0px;
   }
   .restaurant_pos {
-    width: 1022px;
+    width: 1010px;
     margin: auto;
+    padding-left: 10px;
   }
   .restaurant_title {
     padding-left: 0;
@@ -67,14 +72,17 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    gap: 42px;
+    gap: 33px;
+    width: 100%;
+    max-width: 1011px;
   }
   .card {
-    width: 490px;
+    width: 470px;
   }
   footer {
     position: relative;
     height: 114px;
+    max-width: 100%;
   }
   footer nav {
     flex-direction: row;
@@ -133,8 +141,5 @@
   .carte .plat {
     width: 634px;
     max-width: none;
-  }
-  .carte .btn {
-    padding-left: -25px;
   }
 }

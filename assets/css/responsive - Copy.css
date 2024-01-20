@@ -1,0 +1,109 @@
+@media screen and (min-width: 700px) {
+  html, :root {
+    font-size: 1px;
+  }
+  .explorer br {
+    display: none;
+  }
+  .fonc {
+    margin: auto;
+    width: 1080rem;
+    padding: 60rem 0 30rem 0;
+  }
+  .fonc_pos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25rem;
+    width: 100%;
+    padding-left: 12rem;
+  }
+  .fonc_btn {
+    width: 335rem;
+  }
+  .fonc_btn-txt {
+    font-size: 16rem;
+  }
+  .restaurant_pos {
+    width: 1080rem;
+    margin: auto;
+  }
+  .restaurant_title {
+    padding-left: 0;
+  }
+  .resto_cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 70rem;
+  }
+  .card {
+    width: 490rem;
+  }
+  footer {
+    position: relative;
+    height: 114rem;
+  }
+  footer nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 250rem;
+    padding-top: 40rem;
+    gap: 15rem;
+  }
+  .footer_title {
+    padding-bottom: 10rem;
+    position: absolute;
+    right: 40rem;
+    bottom: 25rem;
+  }
+  .footer_content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20rem;
+    padding-top: 0.5rem;
+    gap: 15rem;
+  }
+  /***MENU***/
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1055rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 25rem;
+  }
+  .main_img {
+    height: 383px;
+    transform: scale(1);
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: -60px;
+  }
+  .resto_name-wrap {
+    display: flex;
+    gap: 15rem;
+    padding-top: 25rem;
+    padding-bottom: 20rem;
+  }
+  .carte {
+    margin: auto;
+    width: fit-content;
+  }
+  .carte_pos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .carte .plat {
+    width: 634rem;
+    max-width: none;
+  }
+  .carte .btn {
+    padding-left: -25rem;
+  }
+}

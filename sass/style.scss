@@ -3,7 +3,6 @@ html,
     font-size: 0.22vw;
 }
 
-
 .loader {
     width: 100%;
     height: 100vh;
@@ -27,17 +26,15 @@ html,
         animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-timing-function: cubic-bezier(1, 0, 0, 1);
-        color: #9356DC;
-
+        color: #9356dc;
     }
 }
 
 @keyframes loader {
-
     50% {
         font-size: 120px;
         transform: rotate(360deg);
-        color: #FF79DA;
+        color: #ff79da;
     }
 
     100% {
@@ -52,11 +49,10 @@ html,
     }
 }
 
-
 :root,
 button,
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -64,7 +60,7 @@ body {
 }
 
 .site_header-logo {
-    font-family: 'Shrikhand', serif;
+    font-family: "Shrikhand", serif;
     font-size: 30px;
     padding-top: 18px;
     padding-bottom: 10px;
@@ -75,6 +71,7 @@ a {
     color: black;
 }
 
+h1,
 h2,
 h3 {
     font-weight: 700;
@@ -83,11 +80,11 @@ h3 {
 
 /***var&mixins***/
 
-$light-grey: #F6F6F6;
-$medium-grey: #EAEAEA;
+$light-grey: #f6f6f6;
+$medium-grey: #eaeaea;
 $dark-grey: #353535;
-$light-green: #99E2D0;
-$purple: #9356DC;
+$light-green: #99e2d0;
+$purple: #9356dc;
 
 @mixin shadow {
     box-shadow: 0px 4px 10px #00000040;
@@ -95,7 +92,6 @@ $purple: #9356DC;
 
 @mixin shadow-hover {
     box-shadow: 0px 4px 15px 0px #00000059;
-
 }
 
 @mixin triple-dot {
@@ -118,10 +114,9 @@ $purple: #9356DC;
         justify-content: center;
         align-items: center;
         gap: 10px;
-        background-color: #EAEAEA;
+        background-color: #eaeaea;
         height: 40px;
         padding-left: 75px;
-
 
         form {
             height: 100%;
@@ -144,7 +139,6 @@ $purple: #9356DC;
     }
 }
 
-
 /*****explorer*****/
 
 .explorer {
@@ -166,7 +160,6 @@ $purple: #9356DC;
 
     h2 {
         text-align: center;
-
     }
 
     h3 {
@@ -181,7 +174,7 @@ $purple: #9356DC;
     height: 50px;
     border: none;
     border-radius: 25px;
-    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    background: linear-gradient(to bottom, #ff79da, #9356dc);
     font-size: 16px;
     font-weight: 500;
     color: white;
@@ -189,12 +182,11 @@ $purple: #9356DC;
     transition: all 0.5s;
 
     &:hover {
-        background: linear-gradient(to bottom, #FF79DA, #9356DC);
+        background: linear-gradient(to bottom, #ff79da, #9356dc);
         filter: brightness(115%);
         @include shadow-hover;
     }
 }
-
 
 /****fonctionnement*****/
 
@@ -307,7 +299,7 @@ $purple: #9356DC;
         right: 15px;
         width: 80px;
         height: 29px;
-        background-color: #99E2D0;
+        background-color: #99e2d0;
         color: #008766;
         font-weight: 500;
         font-size: 14px;
@@ -347,7 +339,7 @@ footer {
 }
 
 .footer_title {
-    font-family: 'Shrikhand', serif;
+    font-family: "Shrikhand", serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 26.24px;
@@ -365,9 +357,7 @@ footer {
     }
 }
 
-
 /*****************Menu*********************/
-
 
 .main_img {
     position: relative;
@@ -392,7 +382,7 @@ main {
 }
 
 .resto_name {
-    font-family: 'Shrikhand', serif;
+    font-family: "Shrikhand", serif;
     font-weight: 400;
     font-size: 28px;
     line-height: 40.8px;
@@ -424,9 +414,7 @@ main {
         flex-direction: column;
         width: 100%;
     }
-
 }
-
 
 .title_plat {
     font-weight: 300;
@@ -440,7 +428,6 @@ main {
         border-bottom: 3px solid $light-green;
         margin-top: 5px;
     }
-
 }
 
 .plat {
@@ -457,11 +444,10 @@ main {
     position: relative;
     overflow: hidden;
 
-
     &_name {
         font-weight: 500;
         font-size: 18px;
-        line-height: 21.10px;
+        line-height: 21.1px;
         @include triple-dot();
     }
 
@@ -482,7 +468,6 @@ main {
         font-weight: 700;
         color: $dark-grey;
         transition: all 0.5s;
-
     }
 
     &:hover .plat_prix {
@@ -521,7 +506,6 @@ main {
     justify-content: center;
     flex-direction: column;
 
-
     .plat {
         margin-bottom: 15px;
 
@@ -545,27 +529,21 @@ main {
     }
 }
 
-
-
-
-
-
 .fa-heart {
     font-size: 22px;
     -webkit-text-stroke: 1px black;
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
     background-position: 0 100px;
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: background-position .5s;
+    transition: background-position 0.5s;
 
     &:hover {
         background-position: 0 0;
     }
 }
-
 
 .commander {
     display: flex;
