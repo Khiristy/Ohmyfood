@@ -462,6 +462,7 @@ main {
         font-weight: 300;
         line-height: 17.63px;
         @include triple-dot();
+        width: 65%;
     }
 
     &_prix {
@@ -471,7 +472,7 @@ main {
     }
 
     &:hover .plat_prix {
-        transform: translate(-59px);
+        transform: translateX(-59px);
     }
 
     &_valid {

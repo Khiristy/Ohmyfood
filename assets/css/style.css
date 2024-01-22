@@ -402,6 +402,7 @@ main {
   text-overflow: ellipsis;
   width: 80%;
   overflow: hidden;
+  width: 65%;
 }
 .plat_prix {
   font-weight: 700;
@@ -409,7 +410,7 @@ main {
   transition: all 0.5s;
 }
 .plat:hover .plat_prix {
-  transform: translate(-59px);
+  transform: translateX(-59px);
 }
 .plat_valid {
   width: 59px;
