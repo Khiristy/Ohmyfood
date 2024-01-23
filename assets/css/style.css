@@ -8,7 +8,7 @@ html,
   height: 100vh;
   background-color: white;
   position: fixed;
-  z-index: 2;
+  z-index: 100;
   top: 0;
   left: 0;
   display: flex;
@@ -67,31 +67,16 @@ a {
   color: black;
 }
 
-h1,
-h2,
-h3 {
-  font-weight: 700;
-  font-size: 24px;
-}
-
 /***var&mixins***/
 /*****header*****/
 .site_header-logo {
   text-align: center;
-  margin-bottom: 15px;
 }
 
-.site_header-location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background-color: #eaeaea;
-  height: 40px;
-  padding-left: 75px;
-}
-.site_header-location form {
-  height: 100%;
+.site_header {
+  position: relative;
+  z-index: 20;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .site_header-logo i {
   position: absolute;
@@ -101,10 +86,40 @@ h3 {
   font-size: 25px;
   margin-left: 10px;
 }
-.site_header-search {
+
+.site_location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #eaeaea;
+  height: 50px;
+  padding-left: 52px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.site_location form {
+  height: 100%;
+}
+.site_location i {
+  color: #353535;
+  opacity: 1;
+}
+.site_location-search {
   height: 100%;
   border: none;
   background: transparent;
+}
+.site_location-search::placeholder {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #353535;
+  opacity: 1;
 }
 
 /*****explorer*****/
@@ -126,11 +141,19 @@ h3 {
 }
 .explorer h2 {
   text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
 }
 .explorer h3 {
-  text-align: center;
-  font-weight: 300;
+  font-family: Roboto;
   font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #353535;
 }
 
 .btn {
@@ -159,6 +182,12 @@ h3 {
 .fonc h3 {
   font-weight: 700;
   font-size: 24px;
+}
+.fonc h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: left;
 }
 .fonc_pos {
   padding: 0px 10px 0px 10px;
@@ -206,6 +235,8 @@ h3 {
   width: 100%;
 }
 .restaurant_title {
+  font-weight: 700;
+  font-size: 24px;
   padding-bottom: 20px;
 }
 
@@ -217,7 +248,7 @@ h3 {
 
 .card {
   width: 100%;
-  height: 251px;
+  min-height: 251px;
   border-radius: 15px;
   background-color: white;
   position: relative;
@@ -230,8 +261,7 @@ h3 {
   border-top-left-radius: 15px;
 }
 .card_content {
-  padding-left: 15px;
-  padding-top: 10px;
+  padding: 13px 0px 15px 15px;
 }
 .card_title {
   font-size: 18px;
@@ -257,7 +287,7 @@ h3 {
 }
 .card_logo {
   position: absolute;
-  bottom: 20px;
+  bottom: 33px;
   right: 30px;
 }
 
@@ -384,9 +414,10 @@ main {
   font-weight: 500;
   font-size: 18px;
   line-height: 21.1px;
+  transition: all 0.5s;
+  max-width: 90%;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 80%;
   overflow: hidden;
 }
 .plat_wrap {
@@ -400,17 +431,14 @@ main {
   line-height: 17.63px;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 80%;
   overflow: hidden;
-  width: 65%;
+  max-width: 90%;
+  transition: all 0.5s;
 }
 .plat_prix {
   font-weight: 700;
   color: #353535;
   transition: all 0.5s;
-}
-.plat:hover .plat_prix {
-  transform: translateX(-59px);
 }
 .plat_valid {
   width: 59px;
@@ -427,6 +455,15 @@ main {
 }
 .plat_valid i {
   color: white;
+}
+.plat:hover .plat_prix {
+  transform: translateX(-59px);
+}
+.plat:hover .plat_description {
+  max-width: calc(100% - 95px);
+}
+.plat:hover .plat_name {
+  max-width: calc(100% - 50px);
 }
 .plat:hover .plat_valid {
   width: 59px;
@@ -493,10 +530,11 @@ main {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: background-position 0.5s;
+  transition: background-position 0.3s, -webkit-text-stroke 1s 1s;
 }
 .fa-heart:hover {
   background-position: 0 0;
+  -webkit-text-stroke: 0;
 }
 
 .commander {

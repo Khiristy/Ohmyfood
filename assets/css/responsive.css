@@ -33,6 +33,12 @@
   .explorer br {
     display: none;
   }
+  .site_header {
+    box-shadow: none;
+  }
+  .site_header-location {
+    box-shadow: none;
+  }
   .fonc {
     margin: auto;
     width: 1007px;

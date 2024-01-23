@@ -35,6 +35,7 @@
 }
 
 @media screen and (min-width: 1025px) {
+
   html,
   :root {
     font-size: 1px;
@@ -42,6 +43,14 @@
 
   .explorer br {
     display: none;
+  }
+
+  .site_header {
+    box-shadow: none;
+
+    &-location {
+      box-shadow: none;
+    }
   }
 
   .fonc {
@@ -174,4 +183,5 @@
     }
   }
 }
+
 // 
