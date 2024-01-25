@@ -48,11 +48,12 @@
   .site_header {
     box-shadow: none;
 
-    &-location {
-      box-shadow: none;
-    }
+    
   }
-
+  .site_location {
+    box-shadow: none;
+  }
+  
   .fonc {
     margin: auto;
     width: 1007px;
